@@ -49,7 +49,7 @@ token_2 = nlp("book paper library worm")
 # It is interesting that cat and monkey are less similar than apple and banana
 compare(token_1, "Token 1")
 
-# I'm surprised by the low similarity book and worm (and the general low similarity overall)
+# I'm surprised by the low similarity of book and worm (and the general low similarity overall)
 # However this makes sense as spaCy seems to be comparing
 # words and not taking into account "book worm" is a popular phrase.
 compare(token_2, "Token 2")
