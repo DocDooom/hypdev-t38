@@ -25,9 +25,9 @@ def recommend_movie(description: str, mov_dict: dict) -> str:
     description = nlp(description)
     similarity_dict = {}
 
-    for description in mov_dict:
-        similarity = nlp(description).similarity(description)
-        similarity_dict[description] = similarity
+    for desc in mov_dict:
+        similarity = nlp(desc).similarity(description)
+        similarity_dict[desc] = similarity
 
     return max(similarity_dict, key=lambda x: similarity_dict[x])
 
